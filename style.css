@@ -1,0 +1,89 @@
+
+body{
+  
+    overflow-x: hidden;
+   
+    color:#fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background-image: url('https://source.unsplash.com/1920x1080/?landscape');
+    background-repeat: no-repeat;
+    
+    
+}
+small{
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius:  40px ;
+    
+    background-color: black;
+    color: #fff;
+    width: 30px;
+    margin-bottom: 0;
+}
+small:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 300ms;
+}
+h2{
+    margin: 8px 0;
+}
+.temp{
+    font-size: 64px;
+}
+.weather-body{
+   
+    padding: 4em;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 450px;
+    background-color: #000000d0;
+}
+button{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    background-color: transparent;
+    margin: 5px;
+    color:#fff;
+}
+button:hover{
+    background-color:#7c7c7c;
+}
+input{
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 20px ;
+    background-color: rgba(0, 0, 0, 0.378);
+    padding: 5px;
+    font-size: 0.75em;
+    width: calc(100% - 30px);
+    height: 35px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description{
+    text-transform: capitalize;
+}
+.icon{
+
+}
+.weather.loading{
+    display: none ;
+    max-height: 20px;
+}
+.weather,loadding::after{
+    visibility: visible;
+    content: "Loading...";
+    color : #fff;
+}
+ .humidity, .wind{
+    font-size: 0.7em;
+}
